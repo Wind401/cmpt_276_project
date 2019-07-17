@@ -1,0 +1,558 @@
+/* common鏍峰紡 */
+*:focus{
+    outline:0;
+}
+button{
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+/* 鍘婚櫎娴忚鍣ㄨ嚜甯︽牱寮�*/
+input[type="submit"], input[type="button"] {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    border:none;
+
+}
+
+
+.passport-wrap, .passport-wrap button, .passport-wrap input, .passport-wrap select, .passport-wrap textarea {
+		font-family: \5b8b\4f53, tahoma, arial, sans-serif;
+	}
+.passport-wrap {
+	margin: 10px 0 30px;
+}
+.passport-bd{
+	width: 980px;
+	height: 500px;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	position: relative;
+}
+.passport-bd2{
+	height: 325px;
+}
+.passport-wrap .bread-nav{
+	background-color: #EAE9E9;
+	font-size: 18px;
+  	height: 40px;
+  	line-height: 40px;
+  	text-indent: 30px;
+}
+.passport-wrap .bread-nav a{
+	color: #666;
+}
+.passport-wrap .bread-nav a:hover{
+
+}
+.passport-wrap .bread-nav b{
+	font-weight: normal;
+
+}
+.grid-main{
+	padding: 35px;
+}
+.input-item{
+	overflow: hidden;
+	margin-bottom: 30px;
+	*zoom:1;
+}
+.hasTips{
+	margin-bottom: 10px;
+}
+.ie7-input{
+	*margin-left:-12px;
+}
+.input-item .input-title{
+	float: left;
+	width: 250px;
+	text-align: right;
+	height: 42px;
+	font: 18px/42px 'microsoft yahei';
+	margin-right: 12px;
+}
+.input-item .input-box{
+	float: left;
+	position: relative;
+	*zoom:1;
+}
+.input-item .submit-btn{
+	display: block;
+	width: 360px;
+	height: 42px;
+	font: 14px/42px 'microsoft yahei';
+	background-color: #e42837;
+	margin-left: 262px;
+	color: #fff;
+	cursor: pointer;
+}
+.id-title{
+	margin-left: 262px;
+	font:16px/24px 'microsoft yahei';
+	color: #666;
+	margin-bottom: 20px;
+}
+.tips{
+	margin-left: 262px;
+	font:12px/14px 'simsun';
+	color: #676767;
+	margin-bottom: 20px;
+}
+.tips a:hover{
+	color: #000;
+}
+
+.input-item .btn-disable{
+	background-color: #b2b2b2;
+}
+.verify-mail-btn a.btn-disable{
+	background-color: #b2b2b2;
+}
+
+
+
+.input-box input{
+	width: 358px;
+	border:1px solid #DDD;
+	height: 40px;
+	text-indent: 12px;
+	font: 14px/40px 'simsun';
+	position: relative;
+}
+.input-box input.on{
+	border-color: #39a6e5;
+}
+.input-box input.error{
+	border-color: #e42837;
+}
+.input-box .remind-i{
+	position: absolute;
+	left: 375px;
+	top: 0;
+	width: 240px;
+	height: 42px;
+	padding-left: 32px;
+	font: 700 12px/16px 'simsun';
+	color: #e42837;
+	background: url(../images/warn.png) left center no-repeat;
+	display: none;
+
+}
+.input-box .remind-i em{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+.input-box .remind-i span{
+	display: inline-block;
+	vertical-align: middle;/* 淇濊瘉鏂囧瓧鍨傜洿灞呬腑 */
+}
+
+.input-box .vercode-ipt{
+	float: left;
+	width: 168px;
+	margin-right: 10px;
+}
+.get-vercode{
+	float: left;
+	width: 180px;
+	height: 42px;
+	background-color: #e42837;
+	text-align: center;
+	font: 14px/42px 'simsun';
+	color: #fff;
+}
+.check-tip{
+	position: absolute;
+	width: 364px;
+	height: 120px;
+	padding: 0 10px;
+	left: 50%;
+	top: 50%;
+	margin-left: -206px;
+	margin-top: -35px;
+	background:rgba(0, 0, 0, 0.8);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#bb000000', EndColorStr='#bb000000');
+
+	text-align: center;
+	display: none;
+
+}
+.check-tip em{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+.check-tip span{
+	font: 18px/24px 'microsoft yahei';
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+}
+:root * {
+	filter: none\9 !important;
+}
+.verify-mail-wrap{
+	width: 600px;
+	margin: 30px auto;
+
+}
+.verify-mail-title{
+	text-align: center;
+	font: 14px/24px 'simsun';
+	color: #333;
+	margin-bottom: 40px;
+
+}
+.verify-mail-btn{
+	width: 480px;
+	margin: 0 auto;
+}
+.verify-mail-btn a{
+	display: inline-block;
+	width: 200px;
+	height: 42px;
+	background-color: #e42837;
+	text-align: center;
+	color: #fff;
+	font: 14px/42px 'microsoft yahei';
+	margin: 0 16px;
+}
+.verify-mail-btn a:hover{
+	text-decoration: none;
+}
+.pwd-status{
+	margin-left: 262px;
+	/* *margin-left:274px; */
+	font:12px/14px 'simsun';
+	color: #676767;
+	margin-bottom: 20px;
+}
+.pwd-status span{
+	display: inline-block;
+	margin-right: 2px;
+	width: 46px;
+	height: 14px;
+	background-color: #999;
+	vertical-align: middle;
+}
+.pwd-status span.cur{
+	background-color: #fe7c35;
+}
+.pwd-status em{
+	font-style: normal;
+	margin-left: 5px;
+}
+
+.tip-wrap{
+	padding: 125px 0 0 260px;
+}
+.tip-wrap img{
+	float: left;
+	margin: 5px 25px 0 0;
+}
+.tip-wrap .tip-con{
+	float: left;
+	font: 14px/26px 'simsun';
+	color: #000;
+}
+#cboxOverlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	overflow: hidden;
+	/* opacity: 0.4; */
+	outline: 0;
+	display: none;
+	background:rgba(0, 0, 0, 0.4);
+	filter:alpha(opacity=40)\9;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+}
+.pop-wrap{
+	position: absolute;
+	width: 658px;
+	height: 318px;
+	left: 50%;
+	top: 50%;
+	margin-left: -330px;
+	margin-top: -160px;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	z-index: 500;
+	display: none;
+}
+.pop-wrap-info{
+	position: absolute;
+	width: 350px;
+	height: 110px;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -160px;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	z-index: 500;
+	display: none;
+}
+.pop-hd{
+	height: 46px;
+	background-color: #EAE9E9;
+	text-align: center;
+	font: 18px/46px 'microsoft yahei';
+	color: #333;
+	position: relative;
+}
+.pop-hd em{
+	position: absolute;
+	right: 12px;
+	top: 10px;
+	color: #e42837;
+	cursor: pointer;
+	font: 700 18px/20px 'microsoft yahei';
+}
+.pop-txt{
+	padding: 70px 0;
+	text-align: center;
+	font: 14px/30px 'simsun';
+	color: #333;
+}
+
+.pop-txt-info{
+	padding: 40px 0;
+	text-align: center;
+	font: 14px/30px 'simsun';
+	color: #333;
+}
+.pop-btn{
+	width: 430px;
+	margin: 0 auto;
+
+}
+.pop-btn a{
+	display: inline-block;
+	width: 200px;
+	height: 42px;
+	text-align: center;
+	font: 14px/42px 'microsoft yahei';
+	color: #fff;
+	border-radius: 2px;
+	background-color: #666;
+}
+.pop-btn input{
+	display: block;
+	width: 200px;
+	height: 42px;
+	text-align: center;
+	font: 14px/42px 'microsoft yahei';
+	color: #fff;
+	border-radius: 2px;
+	background-color: #e42837;
+	margin:0 auto;
+	cursor: pointer;
+}
+.pop-btn a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.pop-btn a.set-btn{
+	background-color: #e42837;
+	margin-right: 25px;
+}
+.pop-btn2 a.button-confirm{
+/* 	display: inline; */
+	background-color: #e42837;
+	margin:0 auto;
+}
+.pop-btn2 a.cancel-btn{
+	display: block;
+	background-color: #e42837;
+	margin:0 auto;
+}
+.mail-tips{
+	margin: 90px 0 0 240px;
+}
+.mail-tips p{
+	font: 14px/20px 'simsun';
+	margin: 4px 0;
+	color: #999;
+}
+.mail-tips p a{
+	color: #45a6ee;
+}
+
+.close{
+	display: none;
+}
+.nickname {
+	padding-left: 196px;
+}
+
+.hint-alert-box {
+	float: left;
+	width: 190px;
+	margin-right: 58px;
+	border-right: 1px dotted #ddd;
+	font-size: 18px;
+}
+
+.hint-alert-box i {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 39px;
+	height: 39px;
+	margin-right: 20px;
+	overflow: hidden;
+	background: url(../images/!.png) no-repeat 0 0;
+	vertical-align: middle;
+}
+
+#float-captcha {
+    margin: 0 auto;
+    display: inline-block;
+    height: auto;
+    outline: 0;
+    color: #989797;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+#notice {
+    color: red;
+}
+.alignleft {
+ display: inline;
+ float: left;
+}
+.alignright {
+ display: inline;
+ float: right;
+}
+.aligncenter {
+ clear: both;
+ display: block;
+ margin:auto;
+}
+
+.tel_country_arrow {
+    float: left;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    color: black;
+    background: url("../images/narrrow-15x9.png");
+    background-position: 43px 18px;
+    background-repeat: no-repeat;
+}
+
+.tel_select{
+	z-index:101;
+	position: absolute;
+	background: white;
+	display: none;
+    top: 186px;
+    left: 297px;
+    width: 358px;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.tel_select>ul>li>span{
+	float:left;
+}
+.tel_select>ul{
+	width:100%;
+	padding-top:12px;
+	border:1px solid #ccc;
+	box-shadow: 0 0 1px 1px #ccc;
+	background:white;
+}
+.tel_select>ul:after{
+	content:" ";
+	display:block;
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+}
+.area-list{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 15px;
+	text-align: right;;
+	line-height: 30px;
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+.tel_select>ul>.ar-active{
+	background:rgb(245,245,245);
+}
+
+.tel_country_cur_arrow {
+    float: left;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    color: black;
+    background: url("../images/narrrow-15x9.png");
+    background-position:  43px 18px;
+    background-repeat: no-repeat;
+}
+
+.tel_cur_select{
+	z-index:101;
+	position: absolute;
+	background: white;
+	display: none;
+    top: 116px;
+    left: 297px;
+    width: 358px;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.tel_cur_select>ul>li>span{
+	float:left;
+}
+.tel_cur_select>ul{
+	width:100%;
+	padding-top:12px;
+	border:1px solid #ccc;
+	box-shadow: 0 0 1px 1px #ccc;
+	background:white;
+}
+.tel_cur_select>ul:after{
+	content:" ";
+	display:block;
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+}
+.area-cur-list{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 15px;
+	text-align: right;;
+	line-height: 30px;
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+.tel_cur_select>ul>.ar-active{
+	background:rgb(245,245,245);
+}

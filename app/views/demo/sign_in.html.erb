@@ -1,0 +1,102 @@
+<html lang="zh-cn">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit|ie-stand|ie-comp" />
+<title>
+
+   
+
+</title>
+<link rel="stylesheet" href="/css/login_form.css">
+<link rel="stylesheet" href="/css/login_2.css">
+<link rel="stylesheet" href="/css/login_3.css">
+
+<!--script src="https://w1.hoopchina.com.cn/passport/pc/js/lib/MD5.js"></script-->
+<!--script src="https://w1.hoopchina.com.cn/passport/pc/js/cookie.js"></script-->
+
+
+</head>
+
+<body class="">
+    <div class="bg-img">
+        <img src="/images/login_bg.jpg" alt="">
+    </div>
+    <div class="user-login">
+      
+          <div class="back-title">
+              <a href="http://www.google.com"> <b><</b> Back </a>
+          </div>
+        
+        <div class="login-wrap">
+            <div class="logo">
+                
+           
+           
+           
+            <img src="/images/logo.png" alt="">
+           
+        
+            </div>
+            
+              
+              
+                <!-- login -->
+                <form class="common-form login-form" id="J_loginForm" autocomplete="off" method="post">
+                    <ul>
+                        <li>
+                            <div class="ipt-wrap">
+                                <input autocomplete="off" type="text" name="username" placeholder="email" data-rule="empty" data-name="帐号" id="J_username" tabindex="1">
+                            </div>
+                        </li>
+                        <li id="J_insertVali">
+                            <div class="ipt-wrap">
+                                <input autocomplete="off" type="password" name="password" placeholder="password" data-rule="empty" data-name="密码" id="J_pwd" tabindex="2">
+                            </div>
+                        </li>
+                        <li class="clearfix sp-item">
+                            <a href="http://www.google.ca"  class="forget-btn fl">Forget your password</a>
+                            <a href="demo/sign_up" class="register-btn fr">New around here? Sign up now <b>></b></a>
+                            
+                        </li>
+                        <li>
+                  <div id="float-captcha"></div>
+                            <!-- <div id="float-captcha" class="hide"></div> -->
+                            <!-- <img id="wait" class="aligncenter" onerror="this.style.display='none'" src="https://w1.hoopchina.com.cn/passport/pc/images/loading-bubbles.svg" alt="Loading icon" > -->
+                        </li>
+                        <li><input type="submit" class="submit-btn" id="J_submit" value="Sign In"></li>
+                    </ul>
+                </form>
+              
+        </div>
+
+        <div class="pop-wrap">
+        <div class="pop-hd">提示
+
+        </div>
+        <div class="pop-txt">
+
+        </div>
+        <div class="pop-btn pop-btn2">
+
+        </div>
+    </div>
+    <div id="cboxOverlay" ></div>
+    </div>
+
+  </div>
+    <script src="https://w1.hoopchina.com.cn/passport/pc/js/lib/require.js?v=2019042201"></script>
+
+    <script>
+      var registerJs = '/js/register.js';
+      var loginJs    = '/js/login.js';
+      var mode  = '';
+      var url   = (mode == 'mobile' ? registerJs : loginJs);
+
+      require(['https://w1.hoopchina.com.cn/passport/pc/js/common.js?v=2019042201'], function(commmon) {
+            require([url]);
+        });
+  </script>
+</body>
+</html>

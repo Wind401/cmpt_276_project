@@ -1,0 +1,145 @@
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+*:focus{
+    outline:0;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, textarea, button {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+ "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    font-size: 0;
+    visibility: hidden; 
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+
+.tel_country_arrow {
+    float: left;
+    width: 70px;
+    height: 44px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    border-right: 0px;
+    color: black;
+    background: url("../images/narrrow-15x9.png");
+    background-position: 49px 18px;
+    background-repeat: no-repeat;
+}
+
+.tel_select{
+	z-index:101;
+	position: absolute;
+	background: white;
+	display: none;	
+	top: 46px;
+	left: 0;
+	width: 100%;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.tel_select>ul>li>span{
+	float:left;
+}
+.tel_select>ul{
+	width:100%;
+	padding-top:12px;
+	border:1px solid #ccc;
+	box-shadow: 0 0 1px 1px #ccc;
+	background:white;	
+}
+.tel_select>ul:after{
+	content:" ";
+	display:block;
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+}
+.area-list{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 15px;
+	text-align: right;;
+	line-height: 30px;
+	cursor: pointer;
+	margin-bottom: 0px;	
+}
+.tel_select>ul>.ar-active{
+	background:rgb(245,245,245); 
+}
+.area-list:hover{
+	background:rgb(245,245,245);
+}
+

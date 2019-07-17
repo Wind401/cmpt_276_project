@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+/* common */
+
+body{
+    *background: url(../images/bg.jpg) center center no-repeat;
+}
+
+.bg-img{
+    position: fixed;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    *display: none;
+}
+
+.bg-img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.user-login{
+    padding-top: 80px;
+    width: 540px;
+    margin: 0 auto;
+}
+
+.back-title a{
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.back-title a b{
+    font-family: 'simsun';
+    font-weight: 700;
+}
+.back-title a:hover{
+    text-decoration: underline;
+}
+.login-wrap{
+    background-color: #fff;
+    height: 420px;
+    padding: 40px 80px 30px;
+    position: relative;
+}
+
+.login-wrap .logo{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.common-form li{
+    margin-bottom: 20px;
+    position: relative;
+}
+.common-form input{
+    padding: 0;
+    display: block;
+    width: 363px;
+    height: 44px;
+    vertical-align: middle;
+    border: 1px solid #CCC;
+    padding-left: 15px;
+    line-height:44px\9;
+}
+.findpwd-mobile-input{
+	width: 300px;
+}
+.common-form input.placeholder{
+    color: #ccc;
+}
+.common-form .authcode{
+    width: 148px;
+}
+.valicode-wrap{
+    width: 165px;
+    margin-right: 25px; 
+}
+.common-form .vali-img{
+    width: 135px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.common-form .refresh-btn{
+    width: 24px;
+    height: 45px;
+    background: url(../images/refresh.png) right center no-repeat;
+}
+.common-form .refresh-btn.refreshing{
+	-moz-animation:refresh 0.3s ease-in-out;
+	-o-animation:refresh 0.3s ease-in-out;
+	-ms-animation:refresh 0.3s ease-in-out;
+	-webkit-animation:refresh 0.3s ease-in-out;
+    animation: refresh 0.3s ease-in-out;
+}
+@-webkit-keyframes refresh {
+    0%{ -webkit-transform: rotate(0deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+
+}
+@-moz-keyframes refresh {
+    0%{ -moz-transform: rotate(0deg);}
+    100%{ -moz-transform: rotate(360deg); }
+}
+@keyframes refresh {
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg); }
+}
+.common-form .sp-item{
+    margin: -5px 0 10px; 
+}
+.common-form .sp-item a{
+    font: 14px/18px 'microsoft yahei';
+}
+.common-form .sp-item a:hover{
+    text-decoration: underline;
+}
+.common-form .forget-btn{
+    color: #575757;
+}
+.common-form .register-btn{
+    color: #4dbcff;
+}
+.common-form .register-btn b{
+    font-family: 'simsun';
+    font-weight: 700;
+}
+.common-form .submit-btn,.common-form .reg-btn{
+    border: none;
+    background-color: #e42837;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    width: 380px;
+    padding: 0;
+}
+.common-form  .btn-disable{
+    background-color: #cacccd;
+}
+
+.login-method{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 50px;
+    text-align: center;
+}
+
+.login-method a{
+    display: inline-block;
+    color: #4dbcff;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 25px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.login-method a:focus{
+    outline: none;
+}
+.login-method .login-qq{
+    background-image: url(../images/qq-logo.png);
+    padding-right: 15px;
+    border-right: 1px dotted #999;
+    margin-right: 13px;
+}
+.login-method .login-weixin{
+    background-image: url(../images/wechat-logo.png);
+    padding-right: 15px;
+    padding-left: 37px;
+    border-right: 1px dotted #999;
+    margin-right: 13px;
+}
+.login-method .login-phone{
+    background-image: url(../images/phone-logo.png);
+}
+.login-method .login-user{
+    background-image: url(../images/user-logo.png);
+}
+.error-tips{
+    color: #f36c79;
+    /* line-height: 24px; */
+    padding: 5px 0 5px 15px;
+/*     height:14px; */
+    border: 1px solid #f36c79;
+    background-color: #f5d7d7;
+    clear: both;
+    *margin-top:-1px;
+}
+.popError{
+    position: absolute;
+    text-align: center; 
+    top: 30%; 
+    padding:30px;
+    left: 50%;
+    width: 250px;
+    z-index: 999;
+    margin-left:-150px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    background-color: rgba(0,0,0, 0.7);
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B2000000', EndColorStr='#B2000000');
+}
+
+:root * {
+filter: none\9 !important;
+}
+
+.login-wrap .title{
+    color: #333;
+    font: 700 26px/30px 'microsoft yahei';
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.pwdTab{
+    margin-bottom: 20px;
+}
+.pwdTab a{
+    width: 50%;
+    color: #c8c8c8;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C8C8C8;
+    text-align: center;
+    font-weight: 700;    
+}
+.pwdTab a.on{
+    color: #e42837;
+    border-bottom: 2px solid #e42837;
+}
+
+#J_findForm2{
+    display: none;
+}
+.authcode-wrap{
+    width: 165px;
+    margin-right: 25px;  
+}
+.authcode-wrap input{
+    width: 148px;
+}
+.get-vercode{
+    width: 188px;
+    border: 1px solid #e42837;
+    text-align: center;
+    line-height: 44px;
+    color: #e42837;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+button.btn-disable{
+    color: #999;
+    border: 1px solid #999;
+}
+.protocol{
+    background: url(../images/tick.jpg) left center no-repeat;
+    padding-left: 25px;
+}
+.protocol a{
+    color: #4dbcff;
+}
+.protocol a:hover{
+    text-decoration: underline;
+}
+
+#colorbox,#cboxOverlay,#cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+    outline: 0
+}
+
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%
+}
+
+#cboxContent {
+    position: relative;
+    margin-top: 32px;
+    *margin-top: 13px;
+    overflow: visible
+}
+
+#cboxLoadingOverlay,#cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    overflow: hidden
+}
+
+#cboxOverlay {
+    background: #000
+}
+
+#cboxLoadingOverlay {
+    background: #fff
+}
+
+#cboxError {
+    padding: 50px;
+    border: 1px solid #ccc
+}
+
+#cboxLoadingGraphic {
+    background: url(../images/loading.gif) no-repeat center center
+}
+
+#cboxClose {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    border: 0;
+    background: url(../images/close.png) center center no-repeat;
+    cursor: pointer
+}
+
+#colorbox {
+    border: 1px solid #8C8C8C;
+    background: #f5f5f5
+}
+
+#colorbox .bd {
+    margin: 20px
+}
+
+#colorbox .succes-text {
+    text-align: center;
+    color: #3aa7e5;
+    font-size: 14px
+}
+
+#cboxClose {
+    top: -25px;
+    right: 10px
+}
+
+#cboxContent {
+    height: 47px;
+    background: #f5f5f5
+}
+
+#cboxTitle {
+    color: #000;
+    /* left: 10px; */
+    position: absolute;
+    top: -22px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+#cboxLoadedContent {
+    background: #fff
+}
+
+.dialog-wrap {
+    margin: 0;
+    padding: 20px 0 0 50px
+}
+
+.dialog-wrap p {
+    margin: 20px 0
+}
+
+.dialog-wrap .hd {
+    margin: 0 0 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea
+}
+
+.dialog-wrap .check-li {
+    margin: 0 0 15px;
+    font-size: 12px;
+    color: #999
+}
+
+.dialog-wrap .check-li label {
+    margin: 0 10px
+}
+.s-screen .user-login,.ss-screen .user-login{
+    padding-top: 15px;
+}
+.ss-screen .login-method{
+	
+    bottom: 85px;
+}
+
+.countrySelect-wrap{
+	width: 105px;
+}
+
+.mobileinput-wrap{
+	width: 260px;
+    margin-right: 12px; 
+}
+
+.mini{
+    background: none;
+}
+.mini .bg-img{
+    display: none;
+}
+.mini .login-wrap{
+    min-height: 430px;
+    padding: 20px 40px 0;
+}
+.mini .login-wrap .logo{
+    margin-bottom: 10px;
+}
+.mini .user-login{
+    padding-top: 0;
+    width: 460px;
+    margin: 0 auto;
+}
+
+.mini .login-method{
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+}
+.mini .register-part{
+    bottom: 10px;
+}
